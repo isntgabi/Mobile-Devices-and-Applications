@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060607558235",
+    "project_id": "seminar11-9c33a",
+    "storage_bucket": "seminar11-9c33a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060607558235:android:51c4eaf11d3777ac91f57e",
+        "android_client_info": {
+          "package_name": "com.example.seminar11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrbtZI8DgZnc_Nt8ajecEJ57O3tKQF-To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

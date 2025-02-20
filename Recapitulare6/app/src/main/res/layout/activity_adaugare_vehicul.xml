@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugareVehicul">
+
+    <EditText
+        android:id="@+id/etDenumire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Denumire" />
+
+    <EditText
+        android:id="@+id/etNrLocuri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Numar Locuri"
+        app:layout_constraintTop_toBottomOf="@+id/etDenumire"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Data"
+        app:layout_constraintTop_toBottomOf="@+id/etNrLocuri"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/spnCuloare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etData"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTip"
+        android:layout_width="160dp"
+        android:layout_height="145dp"
+        app:layout_constraintTop_toBottomOf="@+id/spnCuloare"
+        tools:layout_editor_absoluteX="0dp" >
+
+        <RadioButton
+            android:id="@+id/rbElectrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electrica" />
+
+        <RadioButton
+            android:id="@+id/rbMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalveaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Salvare"
+        app:layout_constraintTop_toBottomOf="@+id/rgTip"
+        tools:layout_editor_absoluteX="158dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
